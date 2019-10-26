@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:background="#46FFA726"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/titleTxt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onConnect"
+        android:text="Connect"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="613dp"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnConnect"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/btnConnect"
+        android:onClick="onSendData"
+        android:text="Send"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="613dp" />
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:text="Stomp Test Rig"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="30dp"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConnect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#E1F5FE"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lines="20"
+        android:minWidth="400dp" />
+
+</RelativeLayout>
